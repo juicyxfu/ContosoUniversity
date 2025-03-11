@@ -1,7 +1,10 @@
-﻿// CHANGE HISTORY
+﻿// Alexandria D'Oro-Gilbert
+// T INFO 200 B
 ///////////////////////////////////////////////////////////////////////////////////////////////////
+// CHANGE HISTORY
 // DATE         DEVELOPER           DESCRIPTION
 // 03-06-2025   adorog12@uw.edu     Create new SchoolContext that extends DbContext
+
 using ContosoUniversity.Models;
 using Microsoft.EntityFrameworkCore;
 

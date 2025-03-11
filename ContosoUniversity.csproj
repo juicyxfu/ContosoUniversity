@@ -1,13 +1,16 @@
 <!--
+Alexandria D'Oro-Gilbert
+T INFO 200 B
+///////////////////////////////////////////////////////////////////////////////////////////////////
 CHANGE HISTORY
 DATE        DEVELOPER           DESCRIPTION
 03-06-2025  adorog12@uw.edu     Installed various packages.
+03-11-2025  adorog12@uw.edu     Removed nullable enable line of code (helps with codes being thrown).
 -->
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>aspnet-ContosoUniversity-c929834c-bc48-4ba3-95a0-115fafeff1e8</UserSecretsId>
   </PropertyGroup>
@@ -18,7 +21,7 @@ DATE        DEVELOPER           DESCRIPTION
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.11" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.11" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="9.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
   </ItemGroup>
 
 </Project>
