@@ -3,8 +3,9 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // CHANGE HISTORY
 // DATE         DEVELOPER           DESCRIPTION
-// 03-11-2025   adorog12@uw.edu Added in DbIntializer code from tutorial. Change the date for each
-//                              Student to reflect modern enrollment times.
+// 03-11-2025   adorog12@uw.edu     Added in DbIntializer code from tutorial. Change the date for each
+//                                  Student to reflect modern enrollment times.
+// 03-13-2025   adorog12@uw.edu     Add in email address to initialized students.
 
 using ContosoUniversity.Models;
 using System;
@@ -26,14 +27,14 @@ namespace ContosoUniversity.Data
 
             var students = new Student[]
             {
-            new Student{FirstMidName="Carson",LastName="Alexander",EnrollmentDate=DateTime.Parse("2024-09-01")},
-            new Student{FirstMidName="Meredith",LastName="Alonso",EnrollmentDate=DateTime.Parse("2022-09-01")},
-            new Student{FirstMidName="Arturo",LastName="Anand",EnrollmentDate=DateTime.Parse("2023-09-01")},
-            new Student{FirstMidName="Gytis",LastName="Barzdukas",EnrollmentDate=DateTime.Parse("2022-09-01")},
-            new Student{FirstMidName="Yan",LastName="Li",EnrollmentDate=DateTime.Parse("2022-09-01")},
-            new Student{FirstMidName="Peggy",LastName="Justice",EnrollmentDate=DateTime.Parse("2021-09-01")},
-            new Student{FirstMidName="Laura",LastName="Norman",EnrollmentDate=DateTime.Parse("2023-09-01")},
-            new Student{FirstMidName="Nino",LastName="Olivetto",EnrollmentDate=DateTime.Parse("2024-09-01")}
+            new Student{FirstMidName="Carson",LastName="Alexander",EmailAddress="carson.alexander@cu.edu",EnrollmentDate=DateTime.Parse("2024-09-01")},
+            new Student{FirstMidName="Meredith",LastName="Alonso",EmailAddress="meredith.alonso@cu.edu",EnrollmentDate=DateTime.Parse("2022-09-01")},
+            new Student{FirstMidName="Arturo",LastName="Anand",EmailAddress="arturo.anand@cu.edu",EnrollmentDate=DateTime.Parse("2023-09-01")},
+            new Student{FirstMidName="Gytis",LastName="Barzdukas",EmailAddress="gytis.barz@cu.edu",EnrollmentDate=DateTime.Parse("2022-09-01")},
+            new Student{FirstMidName="Yan",LastName="Li",EmailAddress="yan.li@cu.edu",EnrollmentDate=DateTime.Parse("2022-09-01")},
+            new Student{FirstMidName="Peggy",LastName="Justice",EmailAddress = "peg.justice@cu.edu", EnrollmentDate=DateTime.Parse("2021-09-01")},
+            new Student{FirstMidName="Laura",LastName="Norman",EmailAddress = "laura.norman@cu.edu", EnrollmentDate=DateTime.Parse("2023-09-01")},
+            new Student{FirstMidName="Nino",LastName="Olivetto",EmailAddress="nino.olivetto@cu.edu",EnrollmentDate=DateTime.Parse("2024-09-01")}
             };
             foreach (Student s in students)
             {

@@ -1,5 +1,5 @@
-﻿<!--
-    Add in EmailAddress instance
+﻿E<!--
+03-11-2025    Add in EmailAddress instance
 -->
 
 @model ContosoUniversity.Models.Student
@@ -26,6 +26,12 @@
                 <input asp-for="FirstMidName" class="form-control" />
                 <span asp-validation-for="FirstMidName" class="text-danger"></span>
             </div>
+            <div class="form-group">
+                <label asp-for="EmailAddress" class="control-label"></label>
+                <input asp-for="EmailAddress" class="form-control" />
+                <span asp-validation-for="EmailAddress" class="text-danger"></span>
+            </div>
+
             <div class="form-group">
                 <label asp-for="EnrollmentDate" class="control-label"></label>
                 <input asp-for="EnrollmentDate" class="form-control" />

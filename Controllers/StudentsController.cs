@@ -1,4 +1,11 @@
-﻿using System;
+﻿// Alexandria D'Oro-Gilbert
+// T INFO 200 B
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// CHANGE HISTORY
+// DATE         DEVELOPER           DESCRIPTION
+// 03-13-2026   adorog12@uw.edu     Add email address to binding statements.
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -54,7 +61,7 @@ namespace ContosoUniversity.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,LastName,FirstMidName,EnrollmentDate")] Student student)
+        public async Task<IActionResult> Create([Bind("ID,LastName,FirstMidName, EmailAddress,EnrollmentDate")] Student student)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +93,7 @@ namespace ContosoUniversity.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,LastName,FirstMidName,EnrollmentDate")] Student student)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,LastName,FirstMidName, EmailAddress,EnrollmentDate")] Student student)
         {
             if (id != student.ID)
             {
